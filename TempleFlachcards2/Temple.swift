@@ -11,13 +11,13 @@ import Foundation
 class Temple {
     //MARK: Properties
     
-    private var filename: String
-    private var name: String
-    private var city: String
-    private var state: String?
-    private var country: String
-    private var imageWidth: Int
-    private var imageHeight: Int
+    fileprivate var filename: String
+    fileprivate var name: String
+    fileprivate var city: String
+    fileprivate var state: String?
+    fileprivate var country: String
+    fileprivate var imageWidth: Int
+    fileprivate var imageHeight: Int
     
     // MARK: Initialization
     
@@ -51,7 +51,7 @@ class Temple {
         return country
     }
     
-    func getActualImageWidth(actualHeight: Int) -> Int {
+    func getActualImageWidth(_ actualHeight: Int) -> Int {
         return (actualHeight * imageWidth) / imageHeight
     }
     

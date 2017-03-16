@@ -144,13 +144,14 @@ class TempleList {
         return templePhotos
     }
     
-    private func getRandomTemple(var temples: [Temple]) -> Temple? {
+    private func getRandomTemple(_ temples: [Temple]) -> Temple? {
+        var temples = temples
         //if there are still temples left to choose from randomly
         if temples.count > 0 {
             //choose a random temple index
             let index = Int(arc4random() % UInt32(temples.count))
             let randomTemple = temples[index]   //get the temple at that random index
-            temples.removeAtIndex(index)        //remove the temple from the list of temples so it's not randomly chosen again
+            temples.remove(at: index)        //remove the temple from the list of temples so it's not randomly chosen again
             
             return randomTemple
         }
@@ -169,7 +170,7 @@ class TempleList {
                 //choose a random temple index
                 let index = Int(arc4random() % UInt32(temples.count))
                 let randomTemple = temples[index]   //get the temple at that random index
-                temples.removeAtIndex(index)        //remove the temple from the list of temples so it's not randomly chosen again
+                temples.remove(at: index)        //remove the temple from the list of temples so it's not randomly chosen again
                 
                 randomTemples.append(randomTemple)
             }
