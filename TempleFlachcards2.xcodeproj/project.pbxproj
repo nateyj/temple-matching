@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4302FE971BE19439002AAD77 /* Temple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302FE961BE19439002AAD77 /* Temple.swift */; };
+		4302FE9D1BE1A578002AAD77 /* TempleFlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302FE9C1BE1A578002AAD77 /* TempleFlashcardViewController.swift */; };
+		4361D6C31BE95CA200C35678 /* TempleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361D6C21BE95CA200C35678 /* TempleList.swift */; };
 		43903E1F1BE118450011EC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E1E1BE118450011EC2D /* AppDelegate.swift */; };
-		43903E211BE118450011EC2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43903E201BE118450011EC2D /* ViewController.swift */; };
 		43903E241BE118450011EC2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43903E221BE118450011EC2D /* Main.storyboard */; };
 		43903E261BE118450011EC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43903E251BE118450011EC2D /* Assets.xcassets */; };
 		43903E291BE118450011EC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43903E271BE118450011EC2D /* LaunchScreen.storyboard */; };
+		43A27DF31BE7B8B000588B15 /* TempleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A27DF21BE7B8B000588B15 /* TempleCardView.swift */; };
+		43A27DF51BE7B93400588B15 /* TempleCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A27DF41BE7B93400588B15 /* TempleCardCell.swift */; };
+		43DD4D9D1BEACA8000D78172 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD4D9C1BEACA7F00D78172 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4302FE961BE19439002AAD77 /* Temple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temple.swift; sourceTree = "<group>"; };
+		4302FE9C1BE1A578002AAD77 /* TempleFlashcardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleFlashcardViewController.swift; sourceTree = "<group>"; };
+		4361D6C21BE95CA200C35678 /* TempleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleList.swift; sourceTree = "<group>"; };
 		43903E1B1BE118450011EC2D /* TempleFlachcards2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempleFlachcards2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43903E1E1BE118450011EC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43903E201BE118450011EC2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43903E231BE118450011EC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43903E251BE118450011EC2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43903E281BE118450011EC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43903E2A1BE118450011EC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A27DF21BE7B8B000588B15 /* TempleCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCardView.swift; sourceTree = "<group>"; };
+		43A27DF41BE7B93400588B15 /* TempleCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleCardCell.swift; sourceTree = "<group>"; };
+		43DD4D9C1BEACA7F00D78172 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		43903E1D1BE118450011EC2D /* TempleFlachcards2 */ = {
 			isa = PBXGroup;
 			children = (
-				43903E1E1BE118450011EC2D /* AppDelegate.swift */,
-				43903E201BE118450011EC2D /* ViewController.swift */,
-				43903E221BE118450011EC2D /* Main.storyboard */,
+				43903E311BE118730011EC2D /* Model */,
+				43903E331BE118800011EC2D /* View */,
+				43903E321BE118780011EC2D /* Controller */,
+				43903E301BE118500011EC2D /* Supporting Files */,
 				43903E251BE118450011EC2D /* Assets.xcassets */,
-				43903E271BE118450011EC2D /* LaunchScreen.storyboard */,
-				43903E2A1BE118450011EC2D /* Info.plist */,
 			);
 			path = TempleFlachcards2;
+			sourceTree = "<group>";
+		};
+		43903E301BE118500011EC2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43903E2A1BE118450011EC2D /* Info.plist */,
+				43903E271BE118450011EC2D /* LaunchScreen.storyboard */,
+				43903E1E1BE118450011EC2D /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43903E311BE118730011EC2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4302FE961BE19439002AAD77 /* Temple.swift */,
+				4361D6C21BE95CA200C35678 /* TempleList.swift */,
+				43DD4D9C1BEACA7F00D78172 /* Game.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		43903E321BE118780011EC2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4302FE9C1BE1A578002AAD77 /* TempleFlashcardViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		43903E331BE118800011EC2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43903E221BE118450011EC2D /* Main.storyboard */,
+				43A27DF21BE7B8B000588B15 /* TempleCardView.swift */,
+				43A27DF41BE7B93400588B15 /* TempleCardCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +143,7 @@
 				TargetAttributes = {
 					43903E1A1BE118450011EC2D = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = E5QLQ9VDQN;
 					};
 				};
 			};
@@ -135,8 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43903E211BE118450011EC2D /* ViewController.swift in Sources */,
+				4302FE9D1BE1A578002AAD77 /* TempleFlashcardViewController.swift in Sources */,
+				4302FE971BE19439002AAD77 /* Temple.swift in Sources */,
+				43DD4D9D1BEACA8000D78172 /* Game.swift in Sources */,
+				4361D6C31BE95CA200C35678 /* TempleList.swift in Sources */,
 				43903E1F1BE118450011EC2D /* AppDelegate.swift in Sources */,
+				43A27DF51BE7B93400588B15 /* TempleCardCell.swift in Sources */,
+				43A27DF31BE7B8B000588B15 /* TempleCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TempleFlachcards2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byu.is543.TempleFlachcards2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +314,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TempleFlachcards2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byu.is543.TempleFlachcards2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +343,7 @@
 				43903E2F1BE118450011EC2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
